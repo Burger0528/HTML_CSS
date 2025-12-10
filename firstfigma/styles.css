@@ -135,6 +135,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.sectionThree__left_img{
+width: 210px;
+  height: 147px;
+
+}
 .sectionThree__card {
   margin-left: 40;
 }
@@ -142,6 +147,12 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  
+}
+.sectionThree__h4{
+    font-size: 30px;
+    background-color: #f3f3f3;
+    border-radius: 7;
 }
 
 .sectionThree_line1 {
@@ -153,4 +164,72 @@ body {
 
 .sectionThree__card2 {
   background-color: #b9ff66;
+}
+
+
+.sectionFour__card {
+  width: 500px;
+  height: 210px;
+  background-color:#191a23 ;
+  border-radius: 45px;
+  padding: 50px;
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.sectionFour {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.sectionFour__h3 {
+  font-size: 30px;
+  background-color: #ffffff;
+  width: 207px;
+  font-weight: 500;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.sectionFour__img {
+  width: 210px;
+  height: 210px;
+}
+
+.sectionFour__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sectionFour__left_img{
+width: 210px;
+  height: 192px;
+
+}
+.sectionFour__card {
+  margin-left: 40;
+}
+.sectionFour__a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+}
+.sectionFour__h4{
+    font-size: 30px;
+    background-color: #b9ff66;
+    border-radius: 10;
+}
+
+.sectionFour_line1 {
+  width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.sectionFour__card2 {
+  background-color: #f3f3f3;
 }
