@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir experiencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Añadir experiencia</h2>
+
+    <form>
+
+        <!-- CARGO -->
+        <label for="cargo">Cargo</label>
+        <input type="text" id="cargo" placeholder="Team Leader" required>
+
+        <!-- SUGERENCIAS -->
+        <p class="small-text">¿Quieres actualizar tu cargo a alguno de estos?</p>
+        <div class="radio-group">
+            <label><input type="radio" name="sugerencia"> Jefe de equipo de desarrollo</label>
+            <label><input type="radio" name="sugerencia"> Responsable de equipo de TI</label>
+            <label><input type="radio" name="sugerencia"> Jefe del equipo de proyectos</label>
+        </div>
+
+        <!-- TIPO EMPLEO -->
+        <label for="tipo-empleo">Tipo de empleo</label>
+        <select id="tipo-empleo" required>
+            <option value="">Selecciona una opción</option>
+            <option>Jornada completa</option>
+            <option>Medio tiempo</option>
+            <option>Freelance</option>
+            <option>Contrato temporal</option>
+        </select>
+
+        <!-- EMPRESA -->
+        <label for="empresa">Empresa u organización</label>
+        <input type="text" id="empresa" placeholder="Riwi.io" required>
+
+        <!-- UBICACIÓN -->
+        <label for="ubicacion">Ubicación</label>
+        <input type="text" id="ubicacion" placeholder="Madrid, España" required>
+
+        <!-- TIPO DE UBICACIÓN -->
+        <label for="tipo-ubicacion">Tipo de ubicación</label>
+        <select id="tipo-ubicacion" required>
+            <option>Presencial</option>
+            <option>Híbrido</option>
+            <option>Remoto</option>
+        </select>
+
+        <!-- FECHAS -->
+        <div class="row">
+            <div class="col">
+                <label for="fecha-inicio">Fecha de inicio</label>
+                <input type="month" id="fecha-inicio" required>
+            </div>
+
+            <div class="col">
+                <label for="fecha-fin">Fecha de finalización (opcional)</label>
+                <input type="month" id="fecha-fin">
+            </div>
+        </div>
+
+        <!-- DESCRIPCIÓN -->
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" maxlength="2000" placeholder="Describe tus responsabilidades, logros y funciones..."></textarea>
+
+        <button type="submit" class="btn">Guardar</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

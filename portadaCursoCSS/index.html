@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>INTRODUCCIÓN A CSS</h1>
+        <p>Bienvenido. Aquí aprenderás lo esencial para dominar el estilo en la web.</p>
+    </header>
+
+    <section class="temas">
+        <h2 class="decorado">Estructura CSS</h2>
+
+        <div class="columnas">
+            <div class="columna">
+                <button class="btn">Sintaxis de CSS</button>
+                <button class="btn">Selectores</button>
+                <button class="btn">Colores y fondos</button>
+            </div>
+            <div class="columna">
+                <button class="btn">Bordes y sombras</button>
+                <button class="btn">Modelo de caja</button>
+                <button class="btn">Display y Position</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="conclusion">
+        <h2>Conclusión</h2>
+        <p>Aprender CSS es el primer paso para convertir tus ideas en sitios web reales. ¡Sigue practicando!</p>
+        <button class="btn-verde" id="abrirModal">Ver bibliografía</button>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="cerrar" id="cerrarModal" aria-label="Cerrar modal">X</button>
+            <h3 id="modalTitle">Bibliografía</h3>
+            <p>Pronto encontrarás aquí recursos útiles para estudiar CSS.</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modal');
+        const abrir = document.getElementById('abrirModal');
+        const cerrar = document.getElementById('cerrarModal');
+
+        // Abrir modal con el botón
+        abrir.onclick = () => modal.style.display = 'flex';
+
+        // Cerrar modal con el botón de cierre
+        cerrar.onclick = () => modal.style.display = 'none';
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };
+
+        // <-- ADICIÓN: abrir el modal automáticamente al cargar la página -->
+        window.onload = () => {
+            modal.style.display = 'flex';
+        };
+    </script>
+</body>
+</html>

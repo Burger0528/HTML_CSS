@@ -1,0 +1,19 @@
+.article   {
+    background-color: blue; 
+    
+}
+
+.section {
+    display: flex;
+    background-color: antiquewhite;
+    height: 200px;
+    width: 100%;
+    justify-content: sC;
+    align-items: center;
+    height: 80px;
+    width: 60x;
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    
+}

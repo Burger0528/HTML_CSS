@@ -1,0 +1,59 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-size: 20px;
+}
+.button__class {
+    padding: 20px 35px;
+    border-radius: 10px;
+    border: 1px solid black;
+   
+}
+body {
+    margin: 100px;
+    padding: 30px;
+   
+}
+.section__one {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    
+    
+}
+h1 {
+    font-size: 60px;
+    font-weight:700;
+
+}
+.paragraph {
+    font-size: 20px;
+    
+    
+}
+.button__class--section--one{
+    
+    background-color: black;    
+    border-radius: 14px;
+    color: white;
+    padding: 20px 35px;
+    width: fit-content;  
+    
+
+    
+}
+.section__one--text {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;        /* separa h1, p y botón */
+}

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef1f4;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 520px;
+    background: #fff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: #222;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.small-text {
+    color: #666;
+    font-size: 13px;
+    margin: 8px 0 5px;
+}
+
+input[type="text"],
+input[type="month"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccd0d5;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0a66c2;
+    outline: none;
+}
+
+.radio-group {
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.radio-group label {
+    display: block;
+    margin: 6px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.col {
+    flex: 1;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background: #0a66c2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #004182;
+}
