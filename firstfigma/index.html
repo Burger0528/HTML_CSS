@@ -1,37 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Delius&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
-    <header class="header">
-        <img src="../assets/Frame 9.png" alt="image logo" style="width: 220px;height: 56px;">
-        <nav class="nav">
-            <a>About us </a>
-            <a>Services</a>
-            <a>Use Cases</a>
-            <a>Pricing</a>
-            <a>Blog</a>
-            <a class="button__class">Request a quote</a>
-        </nav>
-    </header>
-    <main>
-        <section class="section__one">
-            <div class="section__one--text">
-                <h1>Navigating the <br>
-                    digital landscape <br>for success</h1>
-                <p class="paragraph">Our digital marketing agency helps businesses<br> grow and succeedonline through a 
-                    range of<br> services including SEO, PPC, social media marketing,<br>and content creation..</p>
-                <a class="button__class--section--one">Book a conultation</a>
-            </div>
-            <div class="section__one--image">
-                <img src="../assets/Illustration.png" alt="image header" style="width: 600.46px;height: 515px;">
-            </div>
-            
-        </section>
-    </main>
+    <div class="container">
+        <header class="header">
+            <img class="logo" src="../assets/Frame 9.png" alt="logo" />
+            <nav class="navbar">
+                <a class="link">About us</a>
+                <a class="link">Services</a>
+                <a class="link">Use Cases</a>
+                <a class="link">Pricing</a>
+                <a class="link">Blog</a>
+                <a class="link link__button">Request a quote</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="sectionFirst">
+                <article class="sectionFirst__article">
+                    <h1 class="sectionFirst__h1">
+                        Navigating the digital landscape for success
+                    </h1>
+                    <p class="sectionFirst__p">
+                        Our digital marketing agency helps businesses grow and succeed online through a range of
+                        services
+                        including SEO, PPC, social media marketing, and content creation.
+                    </p>
+                    <button class="sectionFirst__button" />
+                    Book a consultation
+                    </button>
+                </article>
+                <img class="sectionFirst__img" src="../assets/Illustration.png" alt="img article" />
+            </section>
+            <section class="sectionSecond">
+                <img src="../assets/Company logo.png" alt="Amazon_img">
+                <img src="../assets/Company logo (1).png" alt="dribbble_img">
+                <img src="../assets/Company logo (2).png" alt="HubSpot.img">
+                <img src="../assets/Company logo (3).png" alt="Notion_img">
+                <img src="../assets/Company logo (4).png" alt="NETFLIX.img">
+                <img src="../assets/Company logo (5).png" alt="Zoom_img">
+
+            </section>
+
+            <section class="sectionThree">
+
+                <div class="sectionThree_line1">
+                    <article class="sectionThree__card">
+                        <div class="sectionThree__left">
+                            <div class="sectionThree__h3">
+                                Search engine optimization
+                            </div>
+
+                            <a class="sectionThree__a">
+                                <img src="../assets/Icon.png" alt="icon link" />
+                                <label>
+                                    Learn more
+                                </label>
+                            </a>
+                        </div>
+
+                        <img class="sectionThree__img" src="../assets/tokio.png" alt="img card" />
+                    </article>
+                    <article class="sectionThree__card sectionThree__card2">
+                        <div class="sectionThree__left">
+                            <div class="sectionThree__h3">
+                                Search engine optimization
+                            </div>
+
+                            <a class="sectionThree__a">
+                                <img src="../assets/Icon.png" alt="icon link" />
+                                <label>
+                                    Learn more
+                                </label>
+                            </a>
+                        </div>
+
+                        <img class="sectionSeThree__img" src="./assets/tokyo.png" alt="img card" />
+                    </article>
+
+                </div>
+
+
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>
