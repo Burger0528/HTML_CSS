@@ -1,8 +1,9 @@
 @font-face {
     font-family: lightitalic;
-    src: url(../assets/gilroy/Gilroy-LightItalic.ttf);
-    font-family: gilgory;
-    src: url(../assets/gilroy/Gilroy-Light.ttf);
+    src: url(../assets/gilroy/Gilroy-LightItalic.ttf);}
+@font-face{
+   font-family: gilgory;
+    src: url(../assets/gilroy/Gilroy-Medium.ttf);
 }
 body {
   padding: 10px 10px 10px 10px;
@@ -11,6 +12,8 @@ body {
   justify-content: center;
   flex-direction: column;
   font-family: gilgory;
+  padding: 80px 350px;
+  flex-wrap: wrap;
 }
 
 header {
@@ -33,21 +36,27 @@ header {
 }
 h1 {
   font-size: 24px;
-  font-weight: 300;
-  font-family: lightitalic ;
+  font-family:  lightitalic;
+  font-weight: 400;
+  font-style: italic;
  
 }
+.word__italic{
+  font-family:  lightitalic;
+}
 .first_section {
-  
-  
+  display: flex;
+  justify-content: space-between;
+
   background-color: #ffffff;
-  width: 1348px;
- 
+  width: 1340px;
+
   border-radius: 14px;
 }
 .div__left{
   
   display: grid;
+  width:330px;
   grid-template-columns: 565px 630px ;
   grid-template-rows: 479px 476px ;
 
@@ -62,15 +71,21 @@ h1 {
    background-color: #fadcd9;
   
 }
+.div__img{
+  display: flex-row;
+  justify-content:end ;
+  align-items: flex-end
+
+}
 .iconofirst__img{
   display: flex;
-  flex-direction: end;
+  flex-direction: flex-end;
   padding: 34px 24px;
 }
 .h2__article{
   font-family: gilgory;
   font-size: 46px;
-  font-weight: 1000;
+  font-weight: 400;
   padding: 24px;
   width: 700px;
   font-style: bold;
@@ -126,3 +141,194 @@ h1 {
   padding: 24px;
   padding-bottom: 0px;
 }
+.div__right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 405px;
+  height: 821px;
+  background-color: #FFFFFF;
+
+  border-radius: 14px;
+  
+
+
+}
+.div__right--up{
+  width: 412px;
+  height: 800px;
+  background-color:  #fadcd9;
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom:15px;
+  
+}
+
+.div__right--down{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 420px;
+  height: 77PX;
+  background-color: #fadcd9;
+  border-radius: 14px;
+  padding: 24px;
+} 
+.navbar__footer{
+  display: flex;
+  gap : 30px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: gilgory;
+}
+.article__third{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.paragraph__second{
+  font-family: gilgory;
+  font-size: 25px;
+  font-weight: 500;
+}
+.line{
+  margin-top: 30px;
+  margin-bottom: 38px;
+  width: 400px;
+  height:0px;
+  border: 2px solid var(--Secondary, #F8AFA6)
+
+}
+/* ------------------------------
+   TABLET (pantallas medianas)
+/* ------------------------------
+   TABLET (pantallas medianas)
+   ------------------------------ */
+@media (max-width: 1024px) {
+
+  body {
+    padding: 40px 60px;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .first_section {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .div__left {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+  }
+
+  .div__right {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+  }
+
+  .div__right--up {
+    width: 100%;
+    height: 400px;
+  }
+
+  .div__right--down {
+    width: 100%;
+  }
+}
+
+/* ------------------------------
+   CELULAR (pantallas pequeñas)
+   ------------------------------ */
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .navbar__header {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .first_section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .div__left {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+  }
+
+  .h2__article {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .div__down {
+    grid-template-columns: 1fr;
+  }
+
+  .div__right {
+    width: 100%;
+    height: auto;
+  }
+
+  .div__right--up {
+    width: 100%;
+    height: 300px;
+  }
+
+  .div__right--down {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .navbar__footer {
+    gap: 16px;
+    font-size: 13px;
+  }
+}
+
+/* ------------------------------
+   CELULAR MUY PEQUEÑO
+   ------------------------------ */
+@media (max-width: 480px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .h2__article {
+    font-size: 26px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+
+  .div__right--up {
+    height: 250px;
+  }
+
+  .div__right--down {
+    flex-direction: column;
+  
