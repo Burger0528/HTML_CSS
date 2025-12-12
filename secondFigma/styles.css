@@ -1,0 +1,128 @@
+@font-face {
+    font-family: lightitalic;
+    src: url(../assets/gilroy/Gilroy-LightItalic.ttf);
+    font-family: gilgory;
+    src: url(../assets/gilroy/Gilroy-Light.ttf);
+}
+body {
+  padding: 10px 10px 10px 10px;
+  width: auto;
+  display:flex ;
+  justify-content: center;
+  flex-direction: column;
+  font-family: gilgory;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1348px;
+  height: 51px;
+  border-radius: 14px;
+  background-color: #fadcd9;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+.navbar__header {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: gilgory;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: lightitalic ;
+ 
+}
+.first_section {
+  
+  
+  background-color: #ffffff;
+  width: 1348px;
+ 
+  border-radius: 14px;
+}
+.div__left{
+  
+  display: grid;
+  grid-template-columns: 565px 630px ;
+  grid-template-rows: 479px 476px ;
+
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 14px;
+}
+
+
+.article__first{
+   border-radius: 14px;
+   background-color: #fadcd9;
+  
+}
+.iconofirst__img{
+  display: flex;
+  flex-direction: end;
+  padding: 34px 24px;
+}
+.h2__article{
+  font-family: gilgory;
+  font-size: 46px;
+  font-weight: 1000;
+  padding: 24px;
+  width: 700px;
+  font-style: bold;
+}
+
+.div__down{
+  display: grid;
+  grid-template-columns: 448px 448px ;
+  grid-template-rows: 335px 335px ;
+  gap: 10px;
+  
+}
+
+.div__down--left{
+ 
+   border-radius: 14px;
+  padding-bottom: 15px;
+   
+   background-color: #fadcd9;
+}
+.div__down--right{
+   background-color: #F8AFA6;
+   border-radius: 14px;
+  padding-bottom: 15px;
+
+
+}
+.circle_icon{
+  padding: 32px 24px;
+}
+.paragraph{
+  font-family: gilgory;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 24px;
+  padding-bottom: 0px;
+
+}
+.div__down--right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article__second{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+.h3__card{
+  font-family: gilgory;
+  font-size: 55px;
+  font-weight: 650;
+  padding: 24px;
+  padding-bottom: 0px;
+}
